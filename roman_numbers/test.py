@@ -23,8 +23,11 @@ class RomanArabicTestCase(unittest.TestCase):
         self.assertEqual(roman_to_arabic('XXXII'), 32)
         self.assertEqual(roman_to_arabic('LX'), 60)
         self.assertEqual(roman_to_arabic('LIX'), 59)
+        self.assertEqual(roman_to_arabic('LXXXIX'), 89)
         self.assertEqual(roman_to_arabic('CCCXXIV'), 324)
         self.assertEqual(roman_to_arabic('DCVII'), 607)
+        self.assertEqual(roman_to_arabic('DCXLVIII'), 648)
+        self.assertEqual(roman_to_arabic('DCLI'), 651)
         self.assertEqual(roman_to_arabic('MMCDXI'), 2411)
 
     def test_roman_to_arabic_wrong(self):
